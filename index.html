@@ -44,13 +44,22 @@
         }
 
         .hero {
-            background: #eeeeee;
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
+                url("assests/images/NEW CAYMAN BRONZE_ THE SKIN DIVER REINVENTED.jpg") center / cover no-repeat;
         }
 
-        .hero img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
+        .hero h1,
+        .hero p {
+            text-shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
+        }
+
+        .hero .btn {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
         }
 
         .watch-img {
@@ -103,15 +112,10 @@
     <section class="hero py-5" aria-labelledby="home-title">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <h1 id="home-title">Alberto Watch Company</h1>
                     <p>Find beautiful watches for every occasion.</p>
-                    <a href="#products" class="btn btn-dark">View Watches</a>
-                </div>
-
-                <div class="col-md-6 mt-3">
-                    <img src="assests/images/NEW CAYMAN BRONZE_ THE SKIN DIVER REINVENTED.jpg"
-                         alt="Watch">
+                    <a href="#products" class="btn btn-light">View Watches</a>
                 </div>
             </div>
         </div>
@@ -135,8 +139,8 @@
                     <div class="card-body">
                         <h3 class="h5">Heritage Gold</h3>
                         <p>Classic gold watch.</p>
-                        <p><strong>₹18,900</strong></p>
-                        <button class="btn btn-dark btn-sm" onclick="showDetails('Heritage Gold', 'Classic gold watch', '₹18,900')">
+                        <p><strong>$18,900</strong></p>
+                        <button class="btn btn-dark btn-sm" onclick="showDetails('Heritage Gold', 'Classic gold watch', '$18,900')">
                             Details
                         </button>
                     </div>
@@ -150,8 +154,8 @@
                     <div class="card-body">
                         <h3 class="h5">Midnight Classic</h3>
                         <p>Luxury black watch.</p>
-                        <p><strong>₹32,900</strong></p>
-                        <button class="btn btn-dark btn-sm" onclick="showDetails('Midnight Classic', 'Luxury black watch', '₹32,900')">
+                        <p><strong>$32,900</strong></p>
+                        <button class="btn btn-dark btn-sm" onclick="showDetails('Midnight Classic', 'Luxury black watch', '$32,900')">
                             Details
                         </button>
                     </div>
@@ -165,8 +169,8 @@
                     <div class="card-body">
                         <h3 class="h5">Silver Sport</h3>
                         <p>Watch for active people.</p>
-                        <p><strong>₹24,900</strong></p>
-                        <button class="btn btn-dark btn-sm" onclick="showDetails('Silver Sport', 'Watch for active people', '₹24,900')">
+                        <p><strong>$24,900</strong></p>
+                        <button class="btn btn-dark btn-sm" onclick="showDetails('Silver Sport', 'Watch for active people', '$24,900')">
                             Details
                         </button>
                     </div>
@@ -180,8 +184,8 @@
                     <div class="card-body">
                         <h3 class="h5">Motion One</h3>
                         <p>Modern smart watch.</p>
-                        <p><strong>₹15,900</strong></p>
-                        <button class="btn btn-dark btn-sm" onclick="showDetails('Motion One', 'Modern smart watch', '₹15,900')">
+                        <p><strong>$15,900</strong></p>
+                        <button class="btn btn-dark btn-sm" onclick="showDetails('Motion One', 'Modern smart watch', '$15,900')">
                             Details
                         </button>
                     </div>
